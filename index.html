@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- bootstrap js, popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div>
+      <nav
+        class="navbar navbar-expand-md bg-body-tertiary bg-primary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Game</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  게임소개
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">세계관</a></li>
+                  <li><a class="dropdown-item" href="#">캐릭터 직업</a></li>
+                  <li><a class="dropdown-item" href="#">게임 지도</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  게임뉴스
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">공지사항</a></li>
+                  <li><a class="dropdown-item" href="#">업데이트 정보</a></li>
+                  <li><a class="dropdown-item" href="#">이벤트</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  커뮤니티
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">자유 게시판</a></li>
+                  <li><a class="dropdown-item" href="#">공략 게시판</a></li>
+                  <li><a class="dropdown-item" href="#">게임 갤러리</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">다운로드</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">캐시샵</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">신고하기</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- section banner-->
+    <div>
+      <div class="container_fluid">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/sub-bn.jpg" class="d-block w-100" alt="..." />
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section tabs -->
+    <div>
+      <div class="container">
+        <ul class="nav nav-tabs nav-justified m-3 h">
+          <li class="nav-item">
+            <a class="nav-link" href="#">자유 게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">공략 게시판</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"
+              >게임 갤러리</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- section pop/new btn -->
+    <div>
+      <div class="container">
+        <div
+          class="btn-group-sm m-3"
+          role="group"
+          aria-label="Basic outlined example"
+        >
+          <button type="button" class="btn btn-outline-primary">인기순</button>
+          <button type="button" class="btn btn-outline-primary">최신순</button>
+        </div>
+      </div>
+    </div>
+    <!-- section content -->
+    <div class="box-padding-big dark-bg-stat">
+      <div class="container text-center">
+        <div class="card-group">
+            <div class="card">
+                <img src="./images/screenshot-02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">낮잠조짐</h5>
+                    <p class="card-text">오늘 디그다 동산에서 찍은 사진</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-03.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">스킬은그렇게쓰는</h5>
+                    <p class="card-text">손이 똥인가봄 스킬쓰는것좀 보셈</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">스킬은그렇게쓰는</h5>
+                    <p class="card-text">손이 똥인가봄 스킬쓰는것좀 보셈</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./images/screenshot-05.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">똥캐뽑은나야나</h5>
+                    <p class="card-text">비매너 박제합니다. 다들 조심하세요</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-07.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">직업이좀아파요</h5>
+                    <p class="card-text">직업혐오를 하지말아주세요ㅠ 지나가다가 욕하지마세요ㅠ</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-11.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">나는한다게임</h5>
+                    <p class="card-text">오늘 숙제하는데 현타오더라 이딴 숙제 계속 해야함?</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./images/screenshot-08.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">사과는아삭</h5>
+                    <p class="card-text">영자야 핵 안잡냐 이게게임이냐 모니터링은 하는거지?</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-04.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">집에가고싶다</h5>
+                    <p class="card-text">오늘 질러버렸습니당..제 영지 꾸민거 봐주세용!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-09.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">헬로마넴예삐예삐</h5>
+                    <p class="card-text">오늘 레이드 트라이해서 13시간만에 클리어했습니다! 다들 고생하셨어요!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./images/screenshot-12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">오둥이는오둥이</h5>
+                    <p class="card-text">말문이 막힌다 겜생처음 사기맞음</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-06.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">선착순에들었냐</h5>
+                    <p class="card-text">오늘 이벤트 갑니다~ 선착순 열분께 오늘 찍은 이쁜 배경화면 드림!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screenshot-10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">병아리는삐약</h5>
+                    <p class="card-text">길드집에서 단체사진 찍었습니다! +길드원 구해요!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- section pageNum -->
+    <div class="d-md-block box-padding-big dark-bg-stat m-3">
+      <nav aria-label="Page navigation example m-3">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="d-md-block box-padding-big dark-bg-stat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="info-box align-center">
+                        <h3>253</h3>
+                        Todays uploads
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="info-box align-center">
+                        <h3>171092</h3>
+                        Projects uploaded
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-box align-center">
+                        <h3>931523</h3>
+                        Project views
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="info-box align-center">
+                        <h3>931523</h3>
+                        Project views
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="info-box align-center">
+                        <h3>100867</h3>
+                        Comments posted
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </footer>
+  </body>
+</html>
